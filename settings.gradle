@@ -1,10 +1,16 @@
+// Smithing Template Enchantments - Gradle Settings
+// Configures plugin repositories for the build system
+
 pluginManagement {
 	repositories {
+		// Fabric Maven repository for Fabric Loom plugin
 		maven {
 			name = 'Fabric'
 			url = 'https://maven.fabricmc.net/'
 		}
+		// Standard Maven Central repository
 		mavenCentral()
+		// Gradle plugin portal for other plugins
 		gradlePluginPortal()
 	}
 }

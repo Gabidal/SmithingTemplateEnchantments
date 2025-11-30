@@ -15,24 +15,41 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import java.util.List;
 
+/**
+ * Mixin that adds custom tooltip information to smithing templates.
+ * Displays which enchantment will be granted by the template, including:
+ * - The default enchantment and level
+ * - Material-specific overrides (when advanced tooltips are enabled)
+ */
 @Mixin(ItemStack.class)
 public abstract class ItemStackTooltipMixin {
 
+    /**
+     * Adds enchantment information to smithing template tooltips.
+     * Shows the enchantment that will be granted when the template is used,
+     * and displays material-specific overrides when advanced tooltips are enabled (F3+H).
+     * 
+     * @param context The tooltip context
+     * @param player The player viewing the tooltip
+     * @param flag Tooltip flags (controls advanced tooltip display)
+     * @param cir Callback info returnable containing the tooltip lines
+     */
     @Inject(method = "getTooltipLines", at = @At("RETURN"))
     private void addEnchantmentTooltip(Item.TooltipContext context, net.minecraft.world.entity.player.Player player, TooltipFlag flag, CallbackInfoReturnable<List<Component>> cir) {
         ItemStack stack = (ItemStack) (Object) this;
         ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
         
+        // Check if this item has an enchantment configuration
         SmithingTemplateEnchantmentsConfig.TemplateConfig config = SmithingTemplateEnchantmentsConfig.CONFIG.get(itemId.toString());
         
         if (config != null && config.enchantment != null) {
             List<Component> tooltip = cir.getReturnValue();
             
-            // Get the enchantment display name from language file
+            // Build the enchantment display name using translation keys
             String enchantmentKey = "smithingtemplateenchantments.enchantment." + config.enchantment;
             Component enchantmentName = Component.translatable(enchantmentKey);
             
-            // Format: "Grants: Enchantment Name (Level X)"
+            // Build the tooltip line: "Grants: Enchantment Name (Level X)"
             Component grantsText = Component.translatable("smithingtemplateenchantments.tooltip.grants")
                     .withStyle(ChatFormatting.GRAY);
             
@@ -46,8 +63,9 @@ public abstract class ItemStackTooltipMixin {
             
             tooltip.add(fullText);
             
-            // Add material-specific overrides if they exist
+            // Show material-specific overrides when advanced tooltips are enabled (F3+H)
             if (!config.materials.isEmpty()) {
+                // Check if any material has different enchantment or level
                 boolean hasOverrides = config.materials.values().stream()
                         .anyMatch(m -> m.enchantment != null || (m.level != null && !m.level.equals(config.level)));
                 

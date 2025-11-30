@@ -2,15 +2,16 @@
 	"schemaVersion": 1,
 	"id": "smithingtemplateenchantments",
 	"version": "${version}",
-	"name": "smithingTemplateEnchantments",
-	"description": "Adds functionality to the smithing templates :)",
+	"name": "Smithing Template Enchantments",
+	"description": "Enhances smithing templates by adding enchantments to armor when applying trims. Features configurable enchantments, material-based level scaling, and slot restrictions.",
 	"authors": [
 		"Gabriel Golzar",
 		"Joonas Lehto"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/Gabidal/smithingEnchantments"
+		"homepage": "https://github.com/Gabidal/SmithingTemplateEnchantments",
+		"sources": "https://github.com/Gabidal/SmithingTemplateEnchantments",
+		"issues": "https://github.com/Gabidal/SmithingTemplateEnchantments/issues"
 	},
 	"license": "MIT",
 	"icon": "assets/smithingtemplateenchantments/icon.png",
@@ -38,8 +39,5 @@
 		"minecraft": "~1.21.8",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }

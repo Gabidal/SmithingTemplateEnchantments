@@ -1,8 +1,12 @@
+// Smithing Template Enchantments - Build Configuration
+// This file configures the build process for the Fabric mod
+
 plugins {
-	id 'fabric-loom' version "${loom_version}"
-	id 'maven-publish'
+	id 'fabric-loom' version "${loom_version}"  // Fabric Loom for Minecraft mod development
+	id 'maven-publish'                           // Maven publishing support
 }
 
+// Project version and group from gradle.properties
 version = project.mod_version
 group = project.maven_group
 
@@ -10,74 +14,80 @@ base {
 	archivesName = project.archives_base_name
 }
 
+// Maven repositories for mod dependencies
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	// Add custom repositories here if you need to depend on other mods
+	// Loom automatically adds Maven Central and Minecraft repositories
 }
 
+// Loom configuration for mod development
 loom {
+	// Split source sets for client and server code
 	splitEnvironmentSourceSets()
 
+	// Define mod source sets
 	mods {
 		"smithingtemplateenchantments" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
-
 }
 
+// Fabric API configuration
 fabricApi {
+	// Enable client-side data generation
 	configureDataGeneration {
 		client = true
 	}
-}
-
+// Project dependencies
 dependencies {
-	// To change the versions see the gradle.properties file
+	// Minecraft and Fabric dependencies (versions defined in gradle.properties)
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings loom.officialMojangMappings()
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+	// Fabric API - required for this mod
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 }
 
+// Process resources and inject version number
 processResources {
 	inputs.property "version", project.version
 
+	// Replace ${version} in fabric.mod.json with actual version
 	filesMatching("fabric.mod.json") {
 		expand "version": inputs.properties.version
 	}
-}
-
+// Java compilation settings
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
+	it.options.release = 21  // Target Java 21
 }
 
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
+	// Include source JAR in build output
 	withSourcesJar()
 
+	// Java version compatibility
 	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}sourceCompatibility = JavaVersion.VERSION_21
 	targetCompatibility = JavaVersion.VERSION_21
 }
 
+// JAR configuration
 jar {
 	inputs.property "archivesName", project.base.archivesName
 
+	// Include LICENSE file in JAR
 	from("LICENSE") {
 		rename { "${it}_${inputs.properties.archivesName}"}
 	}
 }
 
-// configure the maven publication
+// Maven publishing configuration
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
@@ -86,11 +96,8 @@ publishing {
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	// Configure Maven repositories for publishing artifacts
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+		// Add publishing repositories here (e.g., GitHub Packages, Maven Central)
 	}
 }

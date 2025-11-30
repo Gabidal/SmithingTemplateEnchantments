@@ -40,6 +40,8 @@ fabricApi {
 	configureDataGeneration {
 		client = true
 	}
+}
+
 // Project dependencies
 dependencies {
 	// Minecraft and Fabric dependencies (versions defined in gradle.properties)
@@ -49,8 +51,6 @@ dependencies {
 
 	// Fabric API - required for this mod
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-}modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
 }
 
 // Process resources and inject version number
@@ -61,6 +61,8 @@ processResources {
 	filesMatching("fabric.mod.json") {
 		expand "version": inputs.properties.version
 	}
+}
+
 // Java compilation settings
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 21  // Target Java 21
@@ -72,8 +74,6 @@ java {
 
 	// Java version compatibility
 	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
-}sourceCompatibility = JavaVersion.VERSION_21
 	targetCompatibility = JavaVersion.VERSION_21
 }
 

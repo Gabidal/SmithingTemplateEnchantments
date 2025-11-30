@@ -1,0 +1,522 @@
+{
+  "minecraft:sentry_armor_trim_smithing_template": {
+    "enchantment": "minecraft:projectile_protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:dune_armor_trim_smithing_template": {
+    "enchantment": "minecraft:fire_protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:coast_armor_trim_smithing_template": {
+    "enchantment": "minecraft:respiration",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": [
+      "head"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:wild_armor_trim_smithing_template": {
+    "enchantment": "minecraft:thorns",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:ward_armor_trim_smithing_template": {
+    "enchantment": "minecraft:swift_sneak",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": [
+      "legs"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:eye_armor_trim_smithing_template": {
+    "enchantment": "minecraft:unbreaking",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:vex_armor_trim_smithing_template": {
+    "enchantment": "minecraft:soul_speed",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": [
+      "feet"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:tide_armor_trim_smithing_template": {
+    "enchantment": "minecraft:depth_strider",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": [
+      "feet"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:snout_armor_trim_smithing_template": {
+    "enchantment": "minecraft:blast_protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:rib_armor_trim_smithing_template": {
+    "enchantment": "minecraft:protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:spire_armor_trim_smithing_template": {
+    "enchantment": "minecraft:feather_falling",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": [
+      "feet"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:wayfinder_armor_trim_smithing_template": {
+    "enchantment": "minecraft:frost_walker",
+    "level": 2,
+    "displayName": null,
+    "allowedSlots": [
+      "feet"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:shaper_armor_trim_smithing_template": {
+    "enchantment": "minecraft:mending",
+    "level": 1,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:silence_armor_trim_smithing_template": {
+    "enchantment": "minecraft:swift_sneak",
+    "level": 3,
+    "displayName": null,
+    "allowedSlots": [
+      "legs"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:raiser_armor_trim_smithing_template": {
+    "enchantment": "minecraft:blast_protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:host_armor_trim_smithing_template": {
+    "enchantment": "minecraft:projectile_protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:flow_armor_trim_smithing_template": {
+    "enchantment": "minecraft:aqua_affinity",
+    "level": 1,
+    "displayName": null,
+    "allowedSlots": [
+      "head"
+    ],
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  },
+  "minecraft:bolt_armor_trim_smithing_template": {
+    "enchantment": "minecraft:protection",
+    "level": 4,
+    "displayName": null,
+    "allowedSlots": null,
+    "materials": {
+      "minecraft:netherite_ingot": {
+        "enchantment": null,
+        "level": 5
+      },
+      "minecraft:diamond": {
+        "enchantment": null,
+        "level": 4
+      },
+      "minecraft:emerald": {
+        "enchantment": null,
+        "level": 3
+      },
+      "minecraft:iron_ingot": {
+        "enchantment": null,
+        "level": 2
+      },
+      "minecraft:copper_ingot": {
+        "enchantment": null,
+        "level": 1
+      }
+    }
+  }
+}

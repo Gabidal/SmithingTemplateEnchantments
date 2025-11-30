@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.gg.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"SmithingTrimRecipeMixin",
+		"ItemStackTooltipMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

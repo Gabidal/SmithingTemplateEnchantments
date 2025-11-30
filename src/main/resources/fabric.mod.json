@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "smithingtemplateenchantments",
+	"version": "${version}",
+	"name": "smithingTemplateEnchantments",
+	"description": "Adds functionality to the smithing templates :)",
+	"authors": [
+		"Gabriel Golzar",
+		"Joonas Lehto"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Gabidal/smithingEnchantments"
+	},
+	"license": "MIT",
+	"icon": "assets/smithingtemplateenchantments/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gg.SmithingTemplateEnchantments"
+		],
+		"client": [
+			"com.gg.SmithingTemplateEnchantmentsClient"
+		],
+		"fabric-datagen": [
+			"com.gg.SmithingTemplateEnchantmentsDataGenerator"
+		]
+	},
+	"mixins": [
+		"smithingtemplateenchantments.mixins.json",
+		{
+			"config": "smithingtemplateenchantments.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

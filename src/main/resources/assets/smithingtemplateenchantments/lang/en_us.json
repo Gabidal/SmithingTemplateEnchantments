@@ -1,0 +1,20 @@
+{
+  "smithingtemplateenchantments.tooltip.grants": "Grants: ",
+  "smithingtemplateenchantments.tooltip.level": " (Level %s)",
+  "smithingtemplateenchantments.tooltip.material_override": "  + %s: Level %s",
+  
+  "smithingtemplateenchantments.enchantment.minecraft:projectile_protection": "Projectile Protection",
+  "smithingtemplateenchantments.enchantment.minecraft:fire_protection": "Fire Protection",
+  "smithingtemplateenchantments.enchantment.minecraft:respiration": "Respiration",
+  "smithingtemplateenchantments.enchantment.minecraft:thorns": "Thorns",
+  "smithingtemplateenchantments.enchantment.minecraft:swift_sneak": "Swift Sneak",
+  "smithingtemplateenchantments.enchantment.minecraft:unbreaking": "Unbreaking",
+  "smithingtemplateenchantments.enchantment.minecraft:soul_speed": "Soul Speed",
+  "smithingtemplateenchantments.enchantment.minecraft:depth_strider": "Depth Strider",
+  "smithingtemplateenchantments.enchantment.minecraft:blast_protection": "Blast Protection",
+  "smithingtemplateenchantments.enchantment.minecraft:protection": "Protection",
+  "smithingtemplateenchantments.enchantment.minecraft:feather_falling": "Feather Falling",
+  "smithingtemplateenchantments.enchantment.minecraft:frost_walker": "Frost Walker",
+  "smithingtemplateenchantments.enchantment.minecraft:mending": "Mending",
+  "smithingtemplateenchantments.enchantment.minecraft:aqua_affinity": "Aqua Affinity"
+}

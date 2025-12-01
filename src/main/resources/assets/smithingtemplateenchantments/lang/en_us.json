@@ -1,5 +1,6 @@
 {
-  "smithingtemplateenchantments.tooltip.grants": "Grants: ",
+  "smithingtemplateenchantments.tooltip.prefix": "Prefix: ",
+  "smithingtemplateenchantments.tooltip.postfix": "Postfix: ",
   "smithingtemplateenchantments.tooltip.level": " (Level %s)",
   "smithingtemplateenchantments.tooltip.material_override": "  + %s: Level %s",
   

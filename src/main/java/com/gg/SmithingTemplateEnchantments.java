@@ -29,12 +29,15 @@ public class SmithingTemplateEnchantments implements ModInitializer {
 	/**
 	 * Initializes the mod when Minecraft loads.
 	 * This method is called during the mod loading phase and sets up
-	 * the configuration system for the mod.
+	 * the configuration system and loot table modifications for the mod.
 	 */
 	@Override
 	public void onInitialize() {
 		// Load configuration from file or create default configuration
 		SmithingTemplateEnchantmentsConfig.load();
 		LOGGER.info("Smithing Template Enchantments initialized successfully!");
+		
+		// Register loot table modifications for enchanted smithing templates
+		LootTableModifier.register();
 	}
 }

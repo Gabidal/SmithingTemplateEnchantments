@@ -18,8 +18,8 @@ import java.util.List;
 /**
  * Mixin that adds custom tooltip information to smithing templates.
  * Displays which enchantment will be granted by the template, including:
- * - The default enchantment and level
- * - Material-specific overrides (when advanced tooltips are enabled)
+ * - The enchantment type (level is determined by material used)
+ * - Material-specific enchantment levels (when advanced tooltips are enabled)
  */
 @Mixin(ItemStack.class)
 public abstract class ItemStackTooltipMixin {
@@ -49,17 +49,13 @@ public abstract class ItemStackTooltipMixin {
             String enchantmentKey = "smithingtemplateenchantments.enchantment." + config.enchantment;
             Component enchantmentName = Component.translatable(enchantmentKey);
             
-            // Build the tooltip line: "Grants: Enchantment Name (Level X)"
+            // Build the tooltip line: "Grants: Enchantment Name" (level determined by material)
             Component grantsText = Component.translatable("smithingtemplateenchantments.tooltip.grants")
-                    .withStyle(ChatFormatting.GRAY);
-            
-            Component levelText = Component.translatable("smithingtemplateenchantments.tooltip.level", config.level)
                     .withStyle(ChatFormatting.GRAY);
             
             Component fullText = Component.empty()
                     .append(grantsText)
-                    .append(enchantmentName.copy().withStyle(ChatFormatting.AQUA))
-                    .append(levelText);
+                    .append(enchantmentName.copy().withStyle(ChatFormatting.AQUA));
             
             tooltip.add(fullText);
             
